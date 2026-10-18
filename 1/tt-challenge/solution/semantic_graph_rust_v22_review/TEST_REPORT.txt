@@ -1,0 +1,16 @@
+Semantic Graph V22 controlled pre-submission test report
+--------------------------------------------------------
+Baseline: V19 leaderboard score 0.908720 (user confirmed).
+Changed sources: src/ledger.rs and a one-line adaptation in src/main.rs.
+Response JSON: byte-identical to V19 (verified locally).
+Rust implementation: separate local order states + payments + refunds, with unit tests.
+
+PASS: Python path tests against S2/S3 Java and scenario steps.
+PASS: SQL warmup dump availability.
+PASS: Python structural validator S0..S7 and method/table IDs.
+PASS: Official local evaluate_golden.py: S0=1.000, all eight scenario blocks accepted.
+BLOCKED: cargo test / rustc compile (toolchain not installed, network DNS unavailable).
+BLOCKED: Rust-generated answer parity (requires successful cargo run).
+UNKNOWN: hidden S1..S7 outcomes for any modifications to source logic.
+
+This is a reproducibility/audit ZIP, not an evidence-backed increase in the hidden score.
