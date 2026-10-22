@@ -1,1 +1,0 @@
-[Operation 377] new pipe 251 collides with pipe 127 at location [50920..50921]
